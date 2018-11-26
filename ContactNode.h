@@ -6,7 +6,7 @@ using namespace std;
 
 class ContactNode {
 public:
-    ContactNode(string name, string phone);
+    ContactNode(string name, string phone, ContactNode* nextLoc = nullptr);
     void InsertAfter(ContactNode* nodeLoc);
     string GetName();
     string GetPhoneNumber();

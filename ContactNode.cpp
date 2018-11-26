@@ -3,9 +3,11 @@
 
 using namespace std;
 
-ContactNode::ContactNode(string name, string phone) {
+// Constructors
+ContactNode::ContactNode(string name, string phone, ContactNode* nextLoc) {
 	contactName = name;
 	contactPhoneNum = phone;
+	nextNodePtr = nextLoc;
 }
 
 void ContactNode::InsertAfter(ContactNode* nodeLoc) {
