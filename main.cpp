@@ -32,7 +32,7 @@ for (int i = 0; i < NUM_CONTACTS; i++) {
 	ContactNode* currObj = nullptr;
 
 	// Front of nodes list
-	headObj = new ContactNode("1", "1");
+	headObj = new ContactNode("","");
 
 	// Insert nodes
 	firstContact = new ContactNode(names.at(0), phones.at(0));
@@ -46,7 +46,7 @@ for (int i = 0; i < NUM_CONTACTS; i++) {
 
 	// Print linked list
 	cout << "CONTACT LIST" << endl;
-	currObj = headObj;
+	currObj = firstContact;
 	while (currObj != nullptr) {
 		currObj->PrintContactNode();
 		cout << endl;
